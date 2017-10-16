@@ -28,7 +28,7 @@ public class Design extends JFrame{
 		g.drawString("0", O[0]-15, O[1]+20);
 		g.drawLine(O[0], 0, O[0], 500); //axis z
 		g.drawString("Z", O[0]+10, 50);
-		g.drawString("R=5ρμ", O[0]+(int)(mas*R/2), O[1]+20);
+		g.drawString("R=5sm", O[0]+(int)(mas*R/2), O[1]+20);
 		g.drawLine(O[0]-30, 50, O[0]-30, 130);
 		g.fillPolygon(eArrow[0], eArrow[1], 3); //for E0
 		g.fillPolygon(rArrow[0], rArrow[1], 3); //for radius
@@ -57,6 +57,6 @@ public class Design extends JFrame{
 		g.clearRect(0, O[1]+5, 50, -120);
 		g.setFont(new Font("Bold2", 1, 13));
 		for (int f = 0; f <= 500; f += 50)
-			g.drawString(Integer.toString(f)+"Β", 10, O[1]+5-1*f/50-(int)Math.round((mas*Fey(O[0], R, E0, f))));
+			g.drawString(Integer.toString(f)+"Γ‚", 10, O[1]+5-1*f/50-(int)Math.round((mas*Fey(O[0], R, E0, f))));
 	}
 }
